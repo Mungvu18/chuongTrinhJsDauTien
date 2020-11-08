@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js đơn giản</title>
+</head>
+<body>
+<h1>Chương trình JavaScript đơn giản</h1>
+<p>Javascript có thể làm thay dổi nội dung của html</p>
+<!--Một trong nhiều phương thức của html js là getElementByid(). Ví dụ dưới đây sử dụng nó để tìm phần tử HTML với id là demo-->
+<!--và thay đổi nội dung của html bên trong innerHTML nó thành hellp Js-->
+<h2>What Can JavaScript do?</h2>
+<p id="demo">JavaScript can change HTML content.</p>
+<button type="button" onclick="document.getElementById("demo").innerHTML = 'hello JS!'"> click me!
+</button>
+<p>Js có thể thay đổi thuộc tính thẻ html</p>
+<!--Vd dưới đây có thể thay đổi một hình ảnh html bằng cách đổi thuộc tính src source của img-->
+<h2>What can JS do?</h2>
+<p>Js can change HTML attributes.</p>
+<p>In this case JS change the src attribute of an image.</p>
+<button onclick="document.getElementByid('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">
+    Turn on the light</button>
+<img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">
+    Turn off the light</button>
+</body>
+</html>
